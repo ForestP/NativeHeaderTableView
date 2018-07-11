@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		AE728CDD20F595C900E2C93E /* TableViewWithNativeHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = AE728CDB20F595C900E2C93E /* TableViewWithNativeHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AE728CE420F5963C00E2C93E /* tableViewWithHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE728CE320F5963C00E2C93E /* tableViewWithHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AE728CD820F595C900E2C93E /* TableViewWithNativeHeader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TableViewWithNativeHeader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE728CDB20F595C900E2C93E /* TableViewWithNativeHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewWithNativeHeader.h; sourceTree = "<group>"; };
 		AE728CDC20F595C900E2C93E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE728CE320F5963C00E2C93E /* tableViewWithHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableViewWithHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +48,7 @@
 		AE728CDA20F595C900E2C93E /* TableViewWithNativeHeader */ = {
 			isa = PBXGroup;
 			children = (
+				AE728CE320F5963C00E2C93E /* tableViewWithHeader.swift */,
 				AE728CDB20F595C900E2C93E /* TableViewWithNativeHeader.h */,
 				AE728CDC20F595C900E2C93E /* Info.plist */,
 			);
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					AE728CD720F595C900E2C93E = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,6 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE728CE420F5963C00E2C93E /* tableViewWithHeader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +258,7 @@
 		AE728CE120F595C900E2C93E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -266,6 +272,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ForestPlasencia.TableViewWithNativeHeader;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -274,6 +281,7 @@
 		AE728CE220F595C900E2C93E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
